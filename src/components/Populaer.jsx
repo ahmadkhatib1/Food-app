@@ -39,7 +39,15 @@ const Populaer = () => {
             return (
               <SplideSlide key={rec.id}>
                 <Link to={'/recipe/' + rec.id}>
-                  <Card>
+                  <Card
+                    whileHover={{
+                      scale: [1, 1.2, 1],
+                      transition: {
+                        duration: 1
+                      },
+                      rotate: [1,20,-20,1],
+                    }}
+                  >
                     <p>{rec.title}</p>
                     <img src={rec.image} alt={rec.title} />
                     <Gradiant />

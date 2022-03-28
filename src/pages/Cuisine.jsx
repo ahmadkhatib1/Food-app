@@ -26,7 +26,15 @@ const Cuisine = () => {
             {
                 cuisine.map((cus) => {
                     return (
-                        <Card key={cus.id}>
+                        <Card
+                            whileHover={{
+                                scale: [1, 1.2, 1],
+                                transition: {
+                                    duration: 1
+                                },
+                                rotate: [1, 20, -20, 1],
+                            }}
+                            key={cus.id}>
                             <Link to={'/recipe/' + cus.id}>
                                 <img src={cus.image} alt={cus.title} />
                                 <h4>{cus.title}</h4>

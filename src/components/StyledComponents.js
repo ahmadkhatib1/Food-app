@@ -1,10 +1,11 @@
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 export const Wapper = styled.div`
 margin : 4rem 0rem;
 
 `;
-export const Card = styled.div`
+export const Card = styled(motion.div)`
 height: 15rem;
 overflow:hidden;
 border-radius:2rem;

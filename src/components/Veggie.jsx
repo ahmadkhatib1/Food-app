@@ -38,9 +38,15 @@ const Veggie = () => {
             return (
               <SplideSlide key={rec.id}>
                 <Link to={'/recipe/' + rec.id} >
-                  <Card>
+                  <Card
+                    whileHover={{
+                      y: [0, 15, -15, 0],
+                    }}
+                  >
                     <p>{rec.title}</p>
-                    <img src={rec.image} alt={rec.title} />
+                    <img
+                    src={rec.image}
+                     alt={rec.title} />
                     <Gradiant />
                   </Card>
                 </Link>

@@ -18,7 +18,15 @@ const Searched = () => {
         searched.map((e) => {
           return (
             <Link to={'/recipe/' + e.id}>
-              <Card key={e.id}>
+              <Card
+                whileHover={{
+                  scale: [1, 1.2, 1],
+                  transition: {
+                    duration: 1
+                  },
+                  rotate: [1, 20, -20, 1],
+                }}
+                key={e.id}>
                 <img src={e.image} alt={e.title} />
                 <h4>{e.title}</h4>
               </Card>

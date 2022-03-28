@@ -7,7 +7,7 @@ display:grid;
 grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 grid-gap:3rem;
 `;
-export const Card = styled.div`
+export const Card = styled(motion.div)`
 img{
     width:100%;
     border-radius:2rem;
@@ -21,7 +21,7 @@ h4
     padding:1rem;
 }
 `;
-export const DetailsWapper = styled.div`
+export const DetailsWapper = styled(motion.div)`
 margin-top:10rem;
 margin-bottom:5rem;
 display:flex;
@@ -48,4 +48,4 @@ border:2px solid #000;
 margin-right:2rem;
 font-weight:600;
 `;
-export const Info = styled.div`margin-left:10rem;`;
+export const Info = styled(motion.div)`margin-left:10rem;`;
